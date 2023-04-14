@@ -4,11 +4,10 @@ import react from "../assets/menu-hamburger.svg";
 
 const ContentModal = () => {
 	const [visible, setVisible] = useState(false);
-	const openModal = (e) => {
+	const openModal = () => {
 		setVisible(true);
 	};
-	const closeModal = (e) => {
-		e.preventDefault();
+	const closeModal = () => {
 		setVisible(false);
 	};
 	return (

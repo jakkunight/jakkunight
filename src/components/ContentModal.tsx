@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TopicLink from "./TopicLink";
+import CollapsedMenu from "./CollapsedMenu";
 import react from "../assets/menu-hamburger.svg";
 
 const ContentModal = () => {
@@ -27,37 +27,19 @@ const ContentModal = () => {
 						</button>
 					</div>
 					<div className="p-4 rounded-lg flex flex-col rounded-lg">
-						<h1 className="text-white text-2xl">
-							Commit Logs: Blog personal.
-						</h1>
-						<TopicLink link={"/"} topic={"Index"} />
-						<h1 className="text-white text-2xl">
-							Commit Logs: Blog personal.
-						</h1>
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
-						<TopicLink link={"/conceptos-basicos"} topic={"Conceptos Básicos"} />
+						<CollapsedMenu 
+							heading={"The Console Logs: My personal blog."}
+							topics={[
+								{
+									link: "/",
+									topic: "Índice"
+								},
+								{
+									link: "/conceptos-basicos",
+									topic: "Conceptos Básicos"
+								}
+							]}
+						/>
 					</div>
 				</div>
 			}

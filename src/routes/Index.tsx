@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 
 const Index = () => {
 	return (
-		<div className="text-lg text-gray-300 bg-black">
+		<div className="flex flex-col flex-nowrap min-h-screen w-full text-lg text-gray-300 bg-black">
 			<Header />
-			<div className="w-full h-full p-4">
+			<div className="grow p-4 ">
 				<h1 className="text-4xl text-white m-2">
 					Informática y Programación
 				</h1>

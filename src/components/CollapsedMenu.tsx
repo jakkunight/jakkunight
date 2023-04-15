@@ -1,7 +1,7 @@
-import React, { useState, Children } from "react";
+import React, { useState, ReactNode } from "react";
 import TopicLink from "./TopicLink";
 
-const CollapsedMenu = ({ heading, children }: { heading: string, children?: Children }) => {
+const CollapsedMenu = ({ heading, children }: { heading: string, children?: ReactNode }) => {
 	const [collapsed, setCollapsed] = useState(true);
 	const toogleButton = () => {
 		setCollapsed(!collapsed);

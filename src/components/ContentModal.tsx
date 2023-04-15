@@ -1,9 +1,9 @@
-import React, { useState, Children } from "react";
+import React, { useState, ReactNode } from "react";
 import CollapsedMenu from "./CollapsedMenu";
 import TopicLink from "./TopicLink";
 import hamburgerMenu from "../assets/menu-hamburger.svg";
 
-const ContentModal = ({ heading, children }: { heading: string, children?: Children }) => {
+const ContentModal = ({ heading, children }: { heading: string, children?: ReactNode }) => {
 	const [visible, setVisible] = useState(false);
 	const openModal = () => {
 		setVisible(true);

@@ -1,38 +1,45 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Frame from "../components/Frame";
+import MainHeading from "../components/MainHeading";
+import Heading from "../components/Heading";
 
 const Index = () => {
 	return (
-		<div className="flex flex-col flex-nowrap min-h-screen w-full text-lg text-gray-300 bg-black">
-			<Header />
-			<div className="grow p-4 ">
-				<h1 className="text-4xl text-white m-2">
-					Informática y Programación
-				</h1>
-				<h1 className="text-2xl text-white m-2">
-					Introducción
-				</h1>
-				<p>
-					Hace mucho que quiero escribir esto.
-					Sin lugar a dudas la programación, y la informática en general, 
-					cambió mucho mi manera de ver el mundo. Ahora todo me parece más 
-					interesante y las problemáticas son un reto a mi habilidad para alcanzar
-					soluciones. Sin importar el contexto, siempre estamos expuestos a la
-					toma de decisiones. Hay muchos a quienes se les dificulta esta tarea, 
-					pero tampoco son pocos los que las toman sin que les tiemble el pulso.
-					Es por esto que como seres <i>racionales</i> nos inventamos una serie de 
-					reglas para guiar dicho proceso y simplificarlo para no resultar estresante 
-					para el lego. Este conjunto de reglas lo llamamos <b>lógica</b> y sirve 
-					para guiar nuestras decisiones y, en consecuencia, nuestros actos hacia 
-					aquello que es considerado "bueno y racional".
-				</p>
-				<p>
-					
-				</p>
-			</div>
-			<Footer />
-		</div>
+		<Frame>
+			<MainHeading>
+				¡Maiteĩ!
+			</MainHeading>
+			<p>
+				¡Hola a todos! Mi nombre es <b>Jakku</b> (ジャック) y bienvenidos a mi página web.
+			</p>
+			<Heading>
+				¿¡Qué rayos es esto!?
+			</Heading>
+			<p>
+				Esto es, por así decirlo, mi página web personal. Sé que no es la más elaborada 
+				del mundo, pero creo que es suficiente para permitirme expresarme con soltura y 
+				sobriedad, propias de mí. Espero que les guste mucho y se diviertan viendo todo 
+				lo que hay en este sitio.
+			</p>
+			<Heading>
+				¿De qué hablás en esta sección?
+			</Heading>
+			<p>
+				De todo un poco. La idea de "The Console Logs" es hablar de aquellos temas 
+				que no estén estrictamente ligados a la informática o la programación.
+			</p>
+			<Heading>
+				¿Qué podés contarnos acerca de vos?
+			</Heading>
+			<p>
+				Soy paraguayo. Fan del asado (si es mbopi, mejor), el cocido, el tereré 
+				(que me acompañan en mis jornadas <b>siempre</b>),
+				el mate (me gusta dulce), el mbeju, la chipa, el soyo 
+				(el de verdad, no el yrei que te intentan vender como soyo), 
+				el manga, el anime, los videojuegos (como buen <i>otaku</i>) y una buena 
+				charla.
+			</p>
+		</Frame>
 	);
 };
 

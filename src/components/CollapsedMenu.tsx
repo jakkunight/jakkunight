@@ -1,31 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, Children } from "react";
 import TopicLink from "./TopicLink";
 
-const CollapsedMenu = ({ heading, topics }: { heading: string, topics: Array<{ topic: string, link: string }> }) => {
+const CollapsedMenu = ({ heading, children }: { heading: string, children?: Children }) => {
 	const [collapsed, setCollapsed] = useState(true);
 	const toogleButton = () => {
 		setCollapsed(!collapsed);
 	};
 	return(
 		<div>
-			<div className="flex flex-row justify-between h-12 w-full">
+			<div className="flex flex-row items-center justify-between w-full p-2">
 				<h1 className="text-white text-2xl" >
 					{heading}
 				</h1>
-				<button onClick={toogleButton} className="text-2xl rounded-lg bg-blue-500 text-white aspect-square h-full">
+				<button onClick={toogleButton} className="text-4xl rounded-lg bg-blue-500 text-white aspect-square h-16">
 					{collapsed ? "+" : "-"}
 				</button>
 			</div>
 			{
 				!collapsed && 
 				<div>
-					{
-						topics.map((item, key) => {
-							return (
-								<TopicLink key={key} link={item.link} topic={item.topic} />
-							);
-						})
-					}
+					{children}
 				</div>
 			}
 		</div>

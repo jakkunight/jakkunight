@@ -1,7 +1,7 @@
 import React from "react";
 // Routes:
 import Index from "./routes/Index";
-import CoreConcepts from "./routes/CoreConcepts";
+import Newcomming from "./routes/Newcomming";
 // React Router:
 import {
   createBrowserRouter,
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
 		element: <Index />
 	},
 	{
-		path: baseURL + "/conceptos-basicos",
-		element: <CoreConcepts />
+		path: baseURL + "/un-nuevo-comienzo",
+		element: <Newcomming />
 	}
 ]);
 

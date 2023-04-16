@@ -1,4 +1,5 @@
 import React from "react";
+import Heading from "./Heading";
 import Avatar from "./Avatar";
 
 const SelfCard = () => {
@@ -6,9 +7,9 @@ const SelfCard = () => {
 		<div className="flex flex-row flex-nowrap justify-evenly items-center space-x-4"> 
 			<Avatar />
 			<div>
-				<h1 className="text-white text-2xl font-['Courier_New']">
+				<Heading>
 					Jakku Night
-				</h1>
+				</Heading>
 			</div>
 		</div>
 	);

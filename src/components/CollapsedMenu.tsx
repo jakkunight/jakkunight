@@ -1,5 +1,6 @@
 import React, { useState, ReactNode } from "react";
 import TopicLink from "./TopicLink";
+import Heading from "./Heading";
 
 const CollapsedMenu = ({ heading, children }: { heading: string, children?: ReactNode }) => {
 	const [collapsed, setCollapsed] = useState(true);
@@ -9,10 +10,10 @@ const CollapsedMenu = ({ heading, children }: { heading: string, children?: Reac
 	return(
 		<div>
 			<div className="flex flex-row items-center justify-between w-full p-2">
-				<h1 className="text-white text-2xl" >
+				<Heading>
 					{heading}
-				</h1>
-				<button onClick={toogleButton} className="text-4xl rounded-lg bg-blue-500 text-white aspect-square h-16">
+				</Heading>
+				<button onClick={toogleButton} className="text-2xl rounded-lg bg-blue-500 text-white aspect-square h-8">
 					{collapsed ? "+" : "-"}
 				</button>
 			</div>

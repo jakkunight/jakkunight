@@ -2,6 +2,7 @@ import React from "react";
 // Routes:
 import Index from "./routes/Index";
 import Newcomming from "./routes/Newcomming";
+import AlgorithmicsI from "./routes/AlgorithmicsI";
 // React Router:
 import {
   createBrowserRouter,
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
 	{
 		path: baseURL + "/un-nuevo-comienzo",
 		element: <Newcomming />
+	},
+	{
+		path: baseURL + "/algoritmia/1",
+		element: <AlgorithmicsI />
 	}
 ]);
 

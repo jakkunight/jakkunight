@@ -18,6 +18,9 @@ const Header = () => {
 					<TopicLink topic="¡Bienvenidos!" link="/" />
 					<TopicLink topic="Un nuevo comienzo" link="/un-nuevo-comienzo" />
 				</CollapsedMenu>
+				<CollapsedMenu heading="Algoritmia">
+					<TopicLink topic="El corazón de la Programación" link="/algoritmia/1"/>
+				</CollapsedMenu>
 			</ContentModal>
 		</div>
 	);

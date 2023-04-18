@@ -3,6 +3,7 @@ import React from "react";
 import Index from "./routes/Index";
 import TCL1 from "./routes/the-console-logs/1";
 import A1 from "./routes/algoritmia/1";
+import A2 from "./routes/algoritmia/2";
 // React Router:
 import {
   createBrowserRouter,
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
 	{
 		path: baseURL + "/algoritmia/1",
 		element: <A1 />
+	},
+	{
+		path: baseURL + "/algoritmia/2",
+		element: <A2 />
 	}
 ]);
 

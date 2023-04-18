@@ -20,6 +20,7 @@ const Header = () => {
 				</CollapsedMenu>
 				<CollapsedMenu heading="Algoritmia">
 					<TopicLink topic="El corazón de la Programación" link="/algoritmia/1"/>
+					<TopicLink topic="La Computadora Ideal" link="/algoritmia/2"/>
 				</CollapsedMenu>
 			</ContentModal>
 		</div>

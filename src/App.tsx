@@ -1,8 +1,8 @@
 import React from "react";
 // Routes:
 import Index from "./routes/Index";
-import Newcomming from "./routes/Newcomming";
-import AlgorithmicsI from "./routes/AlgorithmicsI";
+import TCL1 from "./routes/the-console-logs/1";
+import A1 from "./routes/algoritmia/1";
 // React Router:
 import {
   createBrowserRouter,
@@ -19,12 +19,12 @@ const router = createBrowserRouter([
 		element: <Index />
 	},
 	{
-		path: baseURL + "/un-nuevo-comienzo",
-		element: <Newcomming />
+		path: baseURL + "/the-console-logs/1",
+		element: <TCL1 />
 	},
 	{
 		path: baseURL + "/algoritmia/1",
-		element: <AlgorithmicsI />
+		element: <A1 />
 	}
 ]);
 

@@ -16,7 +16,7 @@ const Header = () => {
 			<ContentModal heading="Contenido">
 				<CollapsedMenu heading="The Console Logs: Mi blog personal.">
 					<TopicLink topic="¡Bienvenidos!" link="/" />
-					<TopicLink topic="Un nuevo comienzo" link="/un-nuevo-comienzo" />
+					<TopicLink topic="Un nuevo comienzo" link="/the-console-logs/1" />
 				</CollapsedMenu>
 				<CollapsedMenu heading="Algoritmia">
 					<TopicLink topic="El corazón de la Programación" link="/algoritmia/1"/>

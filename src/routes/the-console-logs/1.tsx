@@ -1,9 +1,9 @@
 import React from "react";
-import Frame from "../components/Frame";
-import Heading from "../components/Heading";
-import MainHeading from "../components/MainHeading";
+import Frame from "../../components/Frame";
+import Heading from "../../components/Heading";
+import MainHeading from "../../components/MainHeading";
 
-const Newcomming = () => {
+const Page = () => {
 	return (
 		<Frame>
 			<MainHeading>
@@ -94,4 +94,4 @@ const Newcomming = () => {
 	);
 };
 
-export default Newcomming;
+export default Page;

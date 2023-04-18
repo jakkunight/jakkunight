@@ -1,9 +1,9 @@
 import React from "react";
-import Frame from "../components/Frame";
-import MainHeading from "../components/MainHeading";
-import Heading from "../components/Heading";
+import Frame from "../../components/Frame";
+import MainHeading from "../../components/MainHeading";
+import Heading from "../../components/Heading";
 
-const AlgorithmicsI = () => {
+const Page = () => {
 	return (
 		<Frame>
 			<MainHeading>
@@ -83,4 +83,4 @@ const AlgorithmicsI = () => {
 	);
 };
 
-export default AlgorithmicsI;
+export default Page;

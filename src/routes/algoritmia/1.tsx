@@ -2,6 +2,7 @@ import React from "react";
 import Frame from "../../components/Frame";
 import MainHeading from "../../components/MainHeading";
 import Heading from "../../components/Heading";
+import Text from "../../components/Text";
 
 const Page = () => {
 	return (
@@ -12,7 +13,7 @@ const Page = () => {
 			<Heading>
 				No resuelve problemas, pero si se le dice que hacer, lo hace.
 			</Heading>
-			<p>
+			<Text>
 				Creo que muchos de nosotros sabemos lo poderosas que son las computadoras. 
 				Hay poco que no pueden hacer. ¡Hasta me podrían preparar el cocido y el tereré! 
 				Pero el caso es que no pueden pensar. No pueden realizar ese maravilloso proceso 
@@ -26,20 +27,20 @@ const Page = () => {
 				no entienda el porqué o cuestione el resultado. Esto tiene una ventaja incalculable, 
 				pues uno puede escribir instrucciones que pueden ser seguidas por el resto y así 
 				llegar a un resultado que sea, como mínimo, aceptable.
-			</p>
+			</Text>
 			<Heading>
 				Programas.
 			</Heading>
-			<p>
+			<Text>
 				El conjunto de instrucciones que utiliza una computadora para realizar una acción 
 				determinada se denomina <b><i>programa</i></b>.<br/>
 				Sin los programas, no seríamos capaces de aprovechar nuestros dispositivos móviles, 
 				computadoras o incluso otros programas para realizar nuestras labores.
-			</p>
+			</Text>
 			<Heading>
 				Datos e Información.
 			</Heading>
-			<p>
+			<Text>
 				Ya vimos que podemos dar instrucciones a una computadora y ésta la va a ejecutar. 
 				Aquí es donde uno se pregunta como saber cuales son las intrucciones correctas, 
 				como se pueden estructurar, como pueden optimizarse, etc.<br/>
@@ -58,27 +59,27 @@ const Page = () => {
 				te digo que esa es tu nota en la materia de algoritmia, la respuesta va a cambiar, pues 
 				ahora hay un contexto y por ende el número adquiere un significado y podemos actuar en 
 				respuesta a dicha información.
-			</p>
+			</Text>
 			<Heading>
 				¿En qué ayuda la Informática a la Programación?
 			</Heading>
-			<p>
+			<Text>
 				Repondiendo a lo anterior, vemos que mediante este nuevo paradigma la programación toma un rol 
 				bastante importante dentro de la informática, pues los tratamientos son acciones que se realizan 
 				sobre conjuntos de datos, y si son acciones, podemos escribir las intrucciones para llevarlas a 
 				cabo. También tenemos un marco de trabajo, ya que debemos operar sobre datos y debemos obtener 
 				información a partir de ellos.
-			</p>
+			</Text>
 			<Heading>
 				La Algoritmia
 			</Heading>
-			<p>
+			<Text>
 				La algoritmia es la ciencia que estudia los algoritmos, los cuales son una serie de instrucciones 
 				que permiten resolver un problema mediante el uso de datos e información. En esta sección, vamos a 
 				estudiar los algoritmos y sus bases. Vamos a destripar a la programación y vamos estudiar a fondo 
 				sus características y sus diversas aplicaciones. Vamos a ver lo que hace la diferencia entre un 
 				programador y un programador <i>GOD</i>.
-			</p>
+			</Text>
 		</Frame>
 	);
 };

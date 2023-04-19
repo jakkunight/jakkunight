@@ -6,7 +6,7 @@ const Frame = ({ children }: { children?: ReactNode}) => {
 	return (
 		<div className="flex flex-col flex-nowrap min-h-screen w-full text-lg text-gray-300">
 			<Header />
-			<div className="grow p-8 bg-gradient-to-tl from-sky-700 to-black">
+			<div className="grow p-2 bg-gradient-to-tl from-sky-700 to-black">
 				{children}
 			</div>
 			<Footer />

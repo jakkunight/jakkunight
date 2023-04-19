@@ -11,24 +11,24 @@ import {
 } from "react-router-dom";
 
 // Base URL for GH-Pages:
-const baseURL = "/#";//"/informatics-and-programming";
+const baseURL = "/jakkunight/#";
 
 // Router config:
 const router = createHashRouter([
 	{
-		path: baseURL + "/",
+		path: "/",
 		element: <Index />
 	},
 	{
-		path: baseURL + "/the-console-logs/1",
+		path: "/the-console-logs/1",
 		element: <TCL1 />
 	},
 	{
-		path: baseURL + "/algoritmia/1",
+		path: "/algoritmia/1",
 		element: <A1 />
 	},
 	{
-		path: baseURL + "/algoritmia/2",
+		path: "/algoritmia/2",
 		element: <A2 />
 	}
 ]);

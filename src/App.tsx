@@ -6,15 +6,15 @@ import A1 from "./routes/algoritmia/1";
 import A2 from "./routes/algoritmia/2";
 // React Router:
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 
 // Base URL for GH-Pages:
-const baseURL = "/informatics-and-programming";
+const baseURL = "/#";//"/informatics-and-programming";
 
 // Router config:
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
 		path: baseURL + "/",
 		element: <Index />

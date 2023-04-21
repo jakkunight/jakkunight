@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component, ReactNode } from "react";
 // Routes:
+import Test from "./routes/test";
 import Index from "./routes/Index";
 import TCL1 from "./routes/the-console-logs/1";
 import A1 from "./routes/algoritmia/1";
@@ -14,23 +15,22 @@ import {
 const baseURL = "/jakkunight/#";
 
 // Router config:
-const router = createHashRouter([
-	{
-		path: "/",
-		element: <Index />
-	},
-	{
-		path: "/the-console-logs/1",
-		element: <TCL1 />
-	},
-	{
-		path: "/algoritmia/1",
-		element: <A1 />
-	},
-	{
-		path: "/algoritmia/2",
-		element: <A2 />
+class Route {
+	path: string = "";
+	element: Component | ReactNode = null;
+	constructor(path: string, element: Component | ReactNode){
+		this.path = path;
+		this.element = element;
 	}
+};
+
+const router = createHashRouter([
+	new Route("/test", <Test />),
+	new Route("/", <Index />),
+	new Route("/the-console-logs/1", <TCL1 />),
+	new Route("/algoritmia/1", <A1 />),
+	new Route("/algoritmia/2", <A2 />),
+	//new Route("", < />),
 ]);
 
 // App component:

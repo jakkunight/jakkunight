@@ -76,13 +76,23 @@ import "prismjs/components/prism-wiki";
 import "prismjs/components/prism-xml-doc";
 import "prismjs/components/prism-yaml";
 import "prismjs/plugins/line-numbers/prism-line-numbers.css";
-import "prismjs/plugins/line-numbers/prism-line-numbers.js"
-import "prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js";
+import "prismjs/plugins/line-numbers/prism-line-numbers.js";
+//import "prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js";
 import "../prism.css";
 
 const Code = ({ filename, lang, children }: { filename?: string, lang: string, children?: string | ReactNode }) => {
 
 	useEffect(() => {
+		Prism.languages["pseudocode"] = {
+			'comment': {
+				pattern: /\/\/(?:[^\r\n\\]|\\(?:\r\n?|\n|(?![\r\n])))*|\/\*[\s\S]*?(?:\*\/|$)/,
+				greedy: true
+			},
+			'string': /(\"(.|\S|\d)*\"|\"(.|\S|\d)*\')/,
+			'keyword': /\b(INICIO|FIN|LEER|IMPRIMIR|SI|ENTONCES|SINO|FINSI|DESDE|HASTA|PASO|FINDESDE|PARA|FINPARA|MIENTRAS|FINMIENTRAS|HACER|REPETIR|FINREPETIR|EN CASO QUE|POR DEFECTO|INTENTAR|CAPTURAR|RETORNAR|CONTINUAR|TERMINAR|CLASE|PRIVADO|PUBLICO|CONTANTE|ENTERO|TEXTO|NUMERO|BOOLEANO|PAUSAR|DETENER POR|PUNTERO|REFERENCIA|IR A|FUNCION|FINFUNCION|SERVIDOR|BASE DE DATOS|ARCHIVO|DIRECTORIO|VARIABLE|IMPORTAR|EXPORTAR|CONSTRUCTOR|FECHA|HORA|EMAIL|EJECUTAR|SISTEMA|CONECTAR CON|TRAER|ACTUALIZAR|ENVIAR|BORRAR)\b/,
+			'operator': /[;\+\-\*\/\<\>\?\:\!\&\%\=\(\)\[\]\{\}]/,
+			'boolean': /\b(VERDADERO|FALSO)\b/,
+		};
 		Prism.highlightAll();
 	}, []);
 	

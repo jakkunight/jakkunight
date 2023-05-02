@@ -22,11 +22,11 @@ code[class*="language-"] *::selection {
 	background: #264F78;
 }
 
-@media print {
+/* @media print {
 	pre[class*="language-"],
 	code[class*="language-"] {
 	}
-}
+} */
 
 pre[class*="language-"] {
 	padding: 1em;
@@ -54,13 +54,13 @@ pre[class*="language-"] {
 
 .token.comment,
 .token.prolog {
-	color: #6a9955;
+	color: #295514;
 }
 
 .token.punctuation,
 .language-html .language-css .token.punctuation,
 .language-html .language-javascript .token.punctuation {
-	color: #d4d4d4;
+	color: #5e0505;
 }
 
 .token.property,
@@ -71,7 +71,7 @@ pre[class*="language-"] {
 .token.symbol,
 .token.inserted,
 .token.unit {
-	color: #b5cea8;
+	color: #6fd637;
 }
 
 .token.selector,
@@ -89,7 +89,7 @@ pre[class*="language-"] {
 
 .token.operator,
 .token.entity {
-	color: #d4d4d4;
+	color: #b81818;
 }
 
 .token.operator.arrow {

@@ -1,21 +1,30 @@
 import React from "react";
-import Frame from "../components/Frame.tsx";
-import Heading from "../components/Heading.tsx";
-import MainHeading from "../components/MainHeading.tsx";
-import Image from "../components/Image.tsx";
-import Code from "../components/Code.tsx";
+import Frame from "../components/Frame";
+import Heading from "../components/Heading";
+import MainHeading from "../components/MainHeading";
+import Image from "../components/Image";
+import Code from "../components/Code";
 
 const Test = () => {
 	return (
 		<Frame>
-			<Code lang="cpp" filename="main.cpp" >
+			<Code lang="pseudocode" filename="helloworld" >
 				{
-					"#include <iostream>\n" +
-					"using namespace std;\n" + 
-					"int main(argc, &argv){\n" +
-					"\tcout << \"Hello World!\" << endl;\n" +
-					"\treturn 0;\n" +
-					"}" 
+					"INICIO\n" +
+					"\t" + "SI a > b ENTONCES" + "\n" +
+					"\t" + "\t" + "IMPRIMIR(\"a es mayor que b\");" + "\n" +
+					"\t" + "FINSI" + "\n" +
+					"\t" + "// Solo soy un yacare" + "\n" +
+					"\t" + "" + "\n" +
+					"\t" + "" + "\n" +
+					"\t" + "" + "\n" +
+					"\t" + "" + "\n" +
+					"\t" + "" + "\n" +
+					"\t" + "" + "\n" +
+					"\t" + "" + "\n" +
+					"\t" + "" + "\n" +
+					"\t" + "" + "\n" +
+					"FIN\n"
 				}
 			</Code>
 		</Frame>

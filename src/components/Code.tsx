@@ -75,6 +75,9 @@ import "prismjs/components/prism-wasm";
 import "prismjs/components/prism-wiki";
 import "prismjs/components/prism-xml-doc";
 import "prismjs/components/prism-yaml";
+import "prismjs/plugins/line-numbers/prism-line-numbers.css";
+import "prismjs/plugins/line-numbers/prism-line-numbers.js"
+import "prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js";
 import "../prism.css";
 
 const Code = ({ filename, lang, children }: { filename?: string, lang: string, children?: string | ReactNode }) => {
@@ -90,7 +93,7 @@ const Code = ({ filename, lang, children }: { filename?: string, lang: string, c
 					filename ? "\"" + filename + "\":" : "Code:"
 				}
 			</div>
-			<div className="bg-black border-2 p-4">
+			<div className="bg-black border-2 p-4 line-numbers">
 				<pre><code className={"font-['Source_Code_Pro'] language-" + lang}>{children}</code></pre>
 			</div>
 		</div>

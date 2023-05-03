@@ -128,7 +128,6 @@ const Code = ({ filename, lang, children }: { filename?: string, lang: string, c
 	let [tokenizedCode, setTokenizedCode] = useState<Array<Token | string>>([]);
 
 	useEffect(() => {
-		console.log(Prism.tokenize(children, Prism.languages[lang]));
 		setTokenizedCode(Prism.tokenize(children, Prism.languages[lang]));
 	}, []);
 

@@ -17,6 +17,7 @@ const Header = () => {
 				<CollapsedMenu heading="The Console Logs: Mi blog personal.">
 					<TopicLink topic="¡Bienvenidos!" link="/" />
 					<TopicLink topic="Un nuevo comienzo" link="/the-console-logs/1" />
+					<TopicLink topic="¡Ya podemos mostrar código!" link="/the-console-logs/2" />
 				</CollapsedMenu>
 				<CollapsedMenu heading="Algoritmia">
 					<TopicLink topic="El corazón de la Programación" link="/algoritmia/1"/>

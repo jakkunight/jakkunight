@@ -3,6 +3,7 @@ import React, { Component, ReactNode } from "react";
 import Test from "./routes/test";
 import Index from "./routes/Index";
 import TCL1 from "./routes/the-console-logs/1";
+import TCL2 from "./routes/the-console-logs/2";
 import A1 from "./routes/algoritmia/1";
 import A2 from "./routes/algoritmia/2";
 // React Router:
@@ -28,6 +29,7 @@ const router = createHashRouter([
 	new Route("/test", <Test />),
 	new Route("/", <Index />),
 	new Route("/the-console-logs/1", <TCL1 />),
+	new Route("/the-console-logs/2", <TCL2 />),
 	new Route("/algoritmia/1", <A1 />),
 	new Route("/algoritmia/2", <A2 />),
 	//new Route("", < />),

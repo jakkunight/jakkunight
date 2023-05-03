@@ -13,6 +13,7 @@ code[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+	z-index: 0;
 }
 
 pre[class*="language-"]::selection,
@@ -20,6 +21,7 @@ code[class*="language-"]::selection,
 pre[class*="language-"] *::selection,
 code[class*="language-"] *::selection {
 	background: #264F78;
+	z-index: 0;
 }
 
 /* @media print {
@@ -32,35 +34,42 @@ pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
+	z-index: 0;
 }
 
 :not(pre) > code[class*="language-"] {
 	padding: .1em .3em;
+	z-index: 0;
 }
 /*********************************************************
 * Tokens
 */
 .namespace {
 	opacity: .7;
+	z-index: 0;
 }
 
 .token.doctype .token.doctype-tag {
 	color: #569CD6;
+	z-index: 0;
 }
 
 .token.doctype .token.name {
 	color: #9cdcfe;
+	z-index: 0;
 }
 
 .token.comment,
 .token.prolog {
 	color: #295514;
+	z-index: 0;
 }
 
 .token.punctuation,
 .language-html .language-css .token.punctuation,
 .language-html .language-javascript .token.punctuation {
 	color: #5e0505;
+	z-index: 0;
 }
 
 .token.property,
@@ -72,6 +81,7 @@ pre[class*="language-"] {
 .token.inserted,
 .token.unit {
 	color: #6fd637;
+	z-index: 0;
 }
 
 .token.selector,
@@ -81,94 +91,116 @@ pre[class*="language-"] {
 .token.builtin,
 .token.deleted {
 	color: #ce9178;
+	z-index: 0;
 }
 
 .language-css .token.string.url {
 	text-decoration: underline;
+	z-index: 0;
 }
 
 .token.operator,
 .token.entity {
 	color: #b81818;
+	z-index: 0;
 }
 
 .token.operator.arrow {
 	color: #569CD6;
+	z-index: 0;
 }
 
 .token.atrule {
 	color: #ce9178;
+	z-index: 0;
 }
 
 .token.atrule .token.rule {
 	color: #c586c0;
+	z-index: 0;
 }
 
 .token.atrule .token.url {
 	color: #9cdcfe;
+	z-index: 0;
 }
 
 .token.atrule .token.url .token.function {
 	color: #dcdcaa;
+	z-index: 0;
 }
 
 .token.atrule .token.url .token.punctuation {
 	color: #d4d4d4;
+	z-index: 0;
 }
 
 .token.keyword {
 	color: #569CD6;
+	z-index: 0;
 }
 
 .token.keyword.module,
 .token.keyword.control-flow {
 	color: #c586c0;
+	z-index: 0;
 }
 
 .token.function,
 .token.function .token.maybe-class-name {
 	color: #dcdcaa;
+	z-index: 0;
 }
 
 .token.regex {
 	color: #d16969;
+	z-index: 0;
 }
 
 .token.important {
 	color: #569cd6;
+	z-index: 0;
 }
 
 .token.italic {
 	font-style: italic;
+	z-index: 0;
 }
 
 .token.constant {
 	color: #9cdcfe;
+	z-index: 0;
 }
 
 .token.class-name,
 .token.maybe-class-name {
 	color: #4ec9b0;
+	z-index: 0;
 }
 
 .token.console {
 	color: #9cdcfe;
+	z-index: 0;
 }
 
 .token.parameter {
 	color: #9cdcfe;
+	z-index: 0;
 }
 
 .token.interpolation {
 	color: #9cdcfe;
+	z-index: 0;
 }
 
 .token.punctuation.interpolation-punctuation {
 	color: #569cd6;
+	z-index: 0;
 }
 
 .token.boolean {
 	color: #569cd6;
+	z-index: 0;
 }
 
 .token.property,
@@ -176,47 +208,58 @@ pre[class*="language-"] {
 .token.imports .token.maybe-class-name,
 .token.exports .token.maybe-class-name {
 	color: #9cdcfe;
+	z-index: 0;
 }
 
 .token.selector {
 	color: #d7ba7d;
+	z-index: 0;
 }
 
 .token.escape {
 	color: #d7ba7d;
+	z-index: 0;
 }
 
 .token.tag {
 	color: #569cd6;
+	z-index: 0;
 }
 
 .token.tag .token.punctuation {
 	color: #808080;
+	z-index: 0;
 }
 
 .token.cdata {
 	color: #808080;
+	z-index: 0;
 }
 
 .token.attr-name {
 	color: #9cdcfe;
+	z-index: 0;
 }
 
 .token.attr-value,
 .token.attr-value .token.punctuation {
 	color: #ce9178;
+	z-index: 0;
 }
 
 .token.attr-value .token.punctuation.attr-equals {
 	color: #d4d4d4;
+	z-index: 0;
 }
 
 .token.entity {
 	color: #569cd6;
+	z-index: 0;
 }
 
 .token.namespace {
 	color: #4ec9b0;
+	z-index: 0;
 }
 /*********************************************************
 * Language Specific
@@ -231,31 +274,36 @@ code[class*="language-typescript"],
 pre[class*="language-tsx"],
 code[class*="language-tsx"] {
 	color: #9cdcfe;
+	z-index: 0;
 }
 
 pre[class*="language-css"],
 code[class*="language-css"] {
 	color: #ce9178;
+	z-index: 0;
 }
 
 pre[class*="language-html"],
 code[class*="language-html"] {
 	color: #d4d4d4;
+	z-index: 0;
 }
 
 .language-regex .token.anchor {
 	color: #dcdcaa;
+	z-index: 0;
 }
 
 .language-html .token.punctuation {
 	color: #808080;
+	z-index: 0;
 }
 /*********************************************************
 * Line highlighting
 */
 pre[class*="language-"] > code[class*="language-"] {
 	position: relative;
-	z-index: 1;
+	z-index: 0;
 }
 
 .line-highlight.line-highlight {

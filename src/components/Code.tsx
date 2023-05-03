@@ -1,5 +1,5 @@
-import React, { ReactNode, useEffect } from "react";
-import Prism from "prismjs";
+import React, { ReactNode, useEffect, useState } from "react";
+import Prism, { Token } from "prismjs";
 import "prismjs/components/prism-markup";
 import "prismjs/components/prism-markup-templating";
 import "prismjs/components/prism-c";
@@ -75,36 +75,90 @@ import "prismjs/components/prism-wasm";
 import "prismjs/components/prism-wiki";
 import "prismjs/components/prism-xml-doc";
 import "prismjs/components/prism-yaml";
-import "prismjs/plugins/line-numbers/prism-line-numbers.css";
-import "prismjs/plugins/line-numbers/prism-line-numbers.js";
+/* import "prismjs/plugins/line-numbers/prism-line-numbers.css";
+import "prismjs/plugins/line-numbers/prism-line-numbers.js"; */
 //import "prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js";
 import "../prism.css";
 
-const Code = ({ filename, lang, children }: { filename?: string, lang: string, children?: string | ReactNode }) => {
+const Code = ({ filename, lang, children }: { filename?: string, lang: string, children: string }) => {
+
+	Prism.languages["pseudocode"] = {
+		'comment': {
+			pattern: /\/\/(?:[^\r\n\\]|\\(?:\r\n?|\n|(?![\r\n])))*|\/\*[\s\S]*?(?:\*\/|$)/,
+			greedy: true
+		},
+		'string': {
+			'pattern': /(\"(.|\S|\d)*\"|\"(.|\S|\d)*\')/,
+			'greedy': true
+		},
+		'keyword': {
+			'pattern': /\b(INICIO|FIN|LEER|IMPRIMIR|SI|ENTONCES|SINO|FINSI|DESDE|HASTA|PASO|FINDESDE|PARA|FINPARA|MIENTRAS|FINMIENTRAS|HACER|REPETIR|FINREPETIR|EN CASO QUE|POR DEFECTO|INTENTAR|CAPTURAR|RETORNAR|CONTINUAR|TERMINAR|CLASE|PRIVADO|PUBLICO|CONTANTE|ENTERO|TEXTO|NUMERO|BOOLEANO|PAUSAR|DETENER POR|PUNTERO|REFERENCIA|IR A|FUNCION|FINFUNCION|SERVIDOR|BASE DE DATOS|ARCHIVO|DIRECTORIO|VARIABLE|IMPORTAR|EXPORTAR|CONSTRUCTOR|FECHA|HORA|EMAIL|EJECUTAR|SISTEMA|CONECTAR CON|TRAER|ACTUALIZAR|ENVIAR|BORRAR)\b/,
+			'greedy': true
+		},
+		'operator': {
+			'pattern': /[;\+\-\*\/\<\>\?\:\!\&\%\=\(\)\[\]\{\}]/,
+			'greedy': true
+		},
+		'boolean': {
+			'pattern': /\b(VERDADERO|FALSO)\b/,
+			'greedy': true
+		},
+	};
+
+/* 	const highlight = (item: Token, key: number) => {
+		if(typeof item === "string"){
+			return (
+				<span key={key}>
+					{item}
+				</span>
+			);
+		}
+		if(typeof item.content === "string"){
+			return (
+				<span key={key} className={item.type} >
+					{item.content}
+				</span>
+			);
+		}
+		if(typeof item.content === typeof Array<string | Token>){
+			return item.content.map(highlight);
+		}
+	}; */
+
+	let [tokenizedCode, setTokenizedCode] = useState<Array<Token | string>>([]);
 
 	useEffect(() => {
-		Prism.languages["pseudocode"] = {
-			'comment': {
-				pattern: /\/\/(?:[^\r\n\\]|\\(?:\r\n?|\n|(?![\r\n])))*|\/\*[\s\S]*?(?:\*\/|$)/,
-				greedy: true
-			},
-			'string': /(\"(.|\S|\d)*\"|\"(.|\S|\d)*\')/,
-			'keyword': /\b(INICIO|FIN|LEER|IMPRIMIR|SI|ENTONCES|SINO|FINSI|DESDE|HASTA|PASO|FINDESDE|PARA|FINPARA|MIENTRAS|FINMIENTRAS|HACER|REPETIR|FINREPETIR|EN CASO QUE|POR DEFECTO|INTENTAR|CAPTURAR|RETORNAR|CONTINUAR|TERMINAR|CLASE|PRIVADO|PUBLICO|CONTANTE|ENTERO|TEXTO|NUMERO|BOOLEANO|PAUSAR|DETENER POR|PUNTERO|REFERENCIA|IR A|FUNCION|FINFUNCION|SERVIDOR|BASE DE DATOS|ARCHIVO|DIRECTORIO|VARIABLE|IMPORTAR|EXPORTAR|CONSTRUCTOR|FECHA|HORA|EMAIL|EJECUTAR|SISTEMA|CONECTAR CON|TRAER|ACTUALIZAR|ENVIAR|BORRAR)\b/,
-			'operator': /[;\+\-\*\/\<\>\?\:\!\&\%\=\(\)\[\]\{\}]/,
-			'boolean': /\b(VERDADERO|FALSO)\b/,
-		};
-		Prism.highlightAll();
+		console.log(Prism.tokenize(children, Prism.languages[lang]));
+		setTokenizedCode(Prism.tokenize(children, Prism.languages[lang]));
 	}, []);
-	
+
 	return (
-		<div className="bg-black">
+		<div className="z-0 bg-black">
 			<div className="bg-black p-4 border-2">
 				{
 					filename ? "\"" + filename + "\":" : "Code:"
 				}
 			</div>
 			<div className="bg-black border-2 p-4 line-numbers">
-				<pre><code className={"font-['Source_Code_Pro'] language-" + lang}>{children}</code></pre>
+				<pre><code className={"font-['Source_Code_Pro'] language-" + lang} >{
+					tokenizedCode.map((item, key) => {
+						if(typeof item === "string"){
+							return (
+								<span key={key}>
+									{item}
+								</span>
+							);
+						}
+						if(typeof item.content === "string"){
+							return (
+								<span key={key} className={"token " + item.type} >
+									{item.content}
+								</span>
+							);
+						}
+						return null;
+					})					
+				}</code></pre>
 			</div>
 		</div>
 	);

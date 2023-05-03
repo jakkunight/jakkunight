@@ -17,8 +17,8 @@ const ContentModal = ({ heading, children }: { heading: string, children?: React
 			</button>
 			{
 				visible && 
-				<div className="backdrop-blur-xl overflow-y-auto rounded-lg fixed top-0 left-0 w-full h-full">
-					<div className="bg-gray-700 sticky top-0 left-0 p-4 flex flex-row flex-nowrap justify-between items-center h-16 w-full">
+				<div className="z-50 backdrop-blur-[500px] overflow-y-auto rounded-lg fixed top-0 left-0 w-full h-full">
+					<div className="z-50 bg-gray-700 sticky top-0 left-0 p-4 flex flex-row flex-nowrap justify-between items-center h-16 w-full">
 						<Heading>
 							{heading}
 						</Heading>
@@ -26,7 +26,7 @@ const ContentModal = ({ heading, children }: { heading: string, children?: React
 							x
 						</button>
 					</div>
-					<div className="p-4 rounded-lg flex flex-col rounded-lg">
+					<div className="z-50 p-4 rounded-lg flex flex-col rounded-lg">
 						{children}
 					</div>
 				</div>

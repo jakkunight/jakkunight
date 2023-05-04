@@ -132,14 +132,14 @@ const Code = ({ filename, lang, children }: { filename?: string, lang: string, c
 	}, []);
 
 	return (
-		<div className="z-0 bg-black">
-			<div className="bg-black p-4 border-2">
+		<div className="h-96 overscroll-contain overflow-auto z-0 bg-black">
+			<div className="overflow-auto bg-black p-4 border-2">
 				{
 					filename ? "\"" + filename + "\":" : "Code:"
 				}
 			</div>
-			<div className="bg-black border-2 p-4 line-numbers">
-				<pre><code className={"font-['Source_Code_Pro'] language-" + lang} >{
+			<div className="overflow-auto bg-black border-2 p-4 line-numbers">
+				<pre><code className={"overflow-auto font-['Source_Code_Pro'] language-" + lang} >{
 					tokenizedCode.map((item, key) => {
 						if(typeof item === "string"){
 							return (

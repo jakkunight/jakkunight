@@ -15,24 +15,31 @@ import {
 // Base URL for GH-Pages:
 const baseURL = "/jakkunight/#";
 
-// Router config:
-class Route {
-	path: string = "";
-	element: Component | ReactNode = null;
-	constructor(path: string, element: Component | ReactNode){
-		this.path = path;
-		this.element = element;
-	}
-};
-
 const router = createHashRouter([
-	new Route("/test", <Test />),
-	new Route("/", <Index />),
-	new Route("/the-console-logs/1", <TCL1 />),
-	new Route("/the-console-logs/2", <TCL2 />),
-	new Route("/algoritmia/1", <A1 />),
-	new Route("/algoritmia/2", <A2 />),
-	//new Route("", < />),
+	{
+		path: baseURL + "/test",
+		element: <Test />
+	},
+	{
+		path: baseURL + "/",
+		element: <Index />
+	},
+	{
+		path: baseURL + "/the-console-logs/1",
+		element: <TCL1 />
+	},
+	{
+		path: baseURL + "/the-console-logs/2",
+		element: <TCL2 />
+	},
+	{
+		path: baseURL + "/algoritmia/1",
+		element: <A1 />
+	},
+	{
+		path: baseURL + "/algoritmia/2",
+		element: <A2 />
+	},
 ]);
 
 // App component:

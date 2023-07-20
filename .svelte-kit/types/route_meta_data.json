@@ -1,5 +1,12 @@
 {
-	"/": [],
-	"/blog/the-console-logs/maitei": [],
-	"/blog/the-console-logs/nos-pasamos-a-svelte": []
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/blog/the-console-logs/maitei": [
+		"src/routes/+layout.ts"
+	],
+	"/blog/the-console-logs/nos-pasamos-a-svelte": [
+		"src/routes/+layout.ts"
+	]
 }

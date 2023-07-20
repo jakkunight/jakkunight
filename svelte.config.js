@@ -16,7 +16,7 @@ const config = {
 			strict: false
 		}),
 		paths: {
-			base: base: dev ? '' : "https://jakkunight.github.io/jakkunight",
+			base: dev ? '' : "https://jakkunight.github.io/jakkunight",
 			//assets: "https://jakkunight.github.io/jakkunight/static"
 		},
 	}

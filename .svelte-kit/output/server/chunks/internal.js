@@ -1,5 +1,5 @@
 import { c as create_ssr_component, a as setContext, v as validate_component, m as missing_component } from "./ssr.js";
-let base = "";
+let base = "/jakkunight";
 let assets = base;
 const initial = { base, assets };
 function reset() {
@@ -92,7 +92,7 @@ const Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const options = {
   app_template_contains_nonce: false,
-  csp: { "mode": "auto", "directives": { "upgrade-insecure-requests": false, "block-all-mixed-content": false }, "reportOnly": { "upgrade-insecure-requests": false, "block-all-mixed-content": false } },
+  csp: { "mode": "auto", "directives": { "script-src": ["self"], "upgrade-insecure-requests": false, "block-all-mixed-content": false }, "reportOnly": { "script-src": ["report-uri"], "upgrade-insecure-requests": false, "block-all-mixed-content": false } },
   csrf_check_origin: true,
   track_server_fetches: false,
   embedded: false,
@@ -166,7 +166,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "fpqpq4"
+  version_hash: "1mi078b"
 };
 function get_hooks() {
   return {};

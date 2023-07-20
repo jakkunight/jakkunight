@@ -1,0 +1,121 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "imports": [
+      "_internal.js"
+    ],
+    "isEntry": true,
+    "src": ".svelte-kit/generated/server/internal.js"
+  },
+  "_MainHeading.js": {
+    "file": "chunks/MainHeading.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_Text.js": {
+    "file": "chunks/Text.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js"
+  },
+  "node_modules/.pnpm/@sveltejs+kit@1.22.3_svelte@4.1.0_vite@4.4.4/node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/.pnpm/@sveltejs+kit@1.22.3_svelte@4.1.0_vite@4.4.4/node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+  },
+  "node_modules/.pnpm/@sveltejs+kit@1.22.3_svelte@4.1.0_vite@4.4.4/node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "imports": [
+      "_internal.js",
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/.pnpm/@sveltejs+kit@1.22.3_svelte@4.1.0_vite@4.4.4/node_modules/@sveltejs/kit/src/runtime/server/index.js"
+  },
+  "src/lib/assets/discord.svg": {
+    "file": "_app/immutable/assets/discord.11377313.svg",
+    "src": "src/lib/assets/discord.svg"
+  },
+  "src/lib/assets/github.svg": {
+    "file": "_app/immutable/assets/github.76b15e47.svg",
+    "src": "src/lib/assets/github.svg"
+  },
+  "src/lib/assets/twitch.svg": {
+    "file": "_app/immutable/assets/twitch.e8507ed6.svg",
+    "src": "src/lib/assets/twitch.svg"
+  },
+  "src/lib/assets/youtube.svg": {
+    "file": "_app/immutable/assets/youtube.ff5d3d9d.svg",
+    "src": "src/lib/assets/youtube.svg"
+  },
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout.2c3164cf.css",
+    "src": "src/routes/+layout.css"
+  },
+  "src/routes/+layout.svelte": {
+    "assets": [
+      "_app/immutable/assets/github.76b15e47.svg",
+      "_app/immutable/assets/discord.11377313.svg",
+      "_app/immutable/assets/youtube.ff5d3d9d.svg",
+      "_app/immutable/assets/twitch.e8507ed6.svg"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.2c3164cf.css"
+    ],
+    "file": "entries/pages/_layout.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Text.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+layout.svelte"
+  },
+  "src/routes/+layout.ts": {
+    "file": "entries/pages/_layout.ts.js",
+    "isEntry": true,
+    "src": "src/routes/+layout.ts"
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Text.js",
+      "_MainHeading.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+page.svelte"
+  },
+  "src/routes/blog/the-console-logs/maitei/+page.svelte": {
+    "file": "entries/pages/blog/the-console-logs/maitei/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Text.js",
+      "_MainHeading.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/blog/the-console-logs/maitei/+page.svelte"
+  },
+  "src/routes/blog/the-console-logs/nos-pasamos-a-svelte/+page.svelte": {
+    "file": "entries/pages/blog/the-console-logs/nos-pasamos-a-svelte/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Text.js",
+      "_MainHeading.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/blog/the-console-logs/nos-pasamos-a-svelte/+page.svelte"
+  }
+}

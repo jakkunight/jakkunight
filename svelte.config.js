@@ -1,5 +1,10 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const dev = process.argv.includes('dev');
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,14 +16,14 @@ const config = {
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({
-			pages: "build",
+			strict: false,
+			fallback: null,
 			assets: "build",
-			strict: false
+			pages: "build"
 		}),
 		paths: {
-			base: dev ? '' : "https://jakkunight.github.io/jakkunight",
-			//assets: "https://jakkunight.github.io/jakkunight/static"
-		},
+			base: dev ? "" : process.env.BASE_PATH
+		}
 	}
 };
 

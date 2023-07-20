@@ -9,10 +9,10 @@ const SocialLink = create_ssr_component(($$result, $$props, $$bindings, slots) =
     $$bindings.media(media);
   return `<div class="bg-gradient-to-tl from-sky-500 to-blue-800 aspect-square rounded-full h-16 w-min overflow-hidden border-4 border-double border-white"><a${add_attribute("href", link, 0)}><img${add_attribute("src", media, 0)} alt="media"></a></div>`;
 });
-const github = "/_app/immutable/assets/github.76b15e47.svg";
-const discord = "/_app/immutable/assets/discord.11377313.svg";
-const youtube = "/_app/immutable/assets/youtube.ff5d3d9d.svg";
-const twitch = "/_app/immutable/assets/twitch.e8507ed6.svg";
+const github = "/jakkunight/_app/immutable/assets/github.76b15e47.svg";
+const discord = "/jakkunight/_app/immutable/assets/discord.11377313.svg";
+const youtube = "/jakkunight/_app/immutable/assets/youtube.ff5d3d9d.svg";
+const twitch = "/jakkunight/_app/immutable/assets/twitch.e8507ed6.svg";
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div class="flex flex-col flex-nowrap w-full h-max bg-blue-950 p-4 items-center justify-center text-center">${validate_component(Heading, "Heading").$$render($$result, {}, {}, {
     default: () => {

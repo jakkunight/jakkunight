@@ -36,7 +36,6 @@ declare module '$env/static/private' {
 	export const DOTNET_CLI_TELEMETRY_OPTOUT: string;
 	export const XDG_SESSION_TYPE: string;
 	export const GIT_ASKPASS: string;
-	export const SSH_AGENT_PID: string;
 	export const npm_package_devDependencies_gh_pages: string;
 	export const npm_package_devDependencies_vite: string;
 	export const npm_node_execpath: string;
@@ -103,7 +102,6 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_script: string;
 	export const XDG_GREETER_DATA_DIR: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
-	export const SSH_AUTH_SOCK: string;
 	export const npm_package_devDependencies__sveltejs_kit: string;
 	export const SHELL: string;
 	export const NODE_PATH: string;
@@ -172,7 +170,6 @@ declare module '$env/dynamic/private' {
 		DOTNET_CLI_TELEMETRY_OPTOUT: string;
 		XDG_SESSION_TYPE: string;
 		GIT_ASKPASS: string;
-		SSH_AGENT_PID: string;
 		npm_package_devDependencies_gh_pages: string;
 		npm_package_devDependencies_vite: string;
 		npm_node_execpath: string;
@@ -239,7 +236,6 @@ declare module '$env/dynamic/private' {
 		npm_lifecycle_script: string;
 		XDG_GREETER_DATA_DIR: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
-		SSH_AUTH_SOCK: string;
 		npm_package_devDependencies__sveltejs_kit: string;
 		SHELL: string;
 		NODE_PATH: string;

@@ -21,7 +21,7 @@ const config = {
 			pages: "build"
 		}),
 		paths: {
-			base: dev ? "" : process.env.PUBLIC_BASE_PATH,
+			base: dev ? "/jakkunight" : process.env.PUBLIC_BASE_PATH,
 			relative: true
 		}
 	}

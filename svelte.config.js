@@ -16,13 +16,13 @@ const config = {
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({
-			strict: false,
-			fallback: null,
+			strict: true,
 			assets: "build",
 			pages: "build"
 		}),
 		paths: {
-			base: dev ? "" : process.env.BASE_PATH
+			base: dev ? "" : process.env.PUBLIC_BASE_PATH,
+			relative: true
 		}
 	}
 };

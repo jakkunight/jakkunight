@@ -73,6 +73,7 @@ const CollapsedMenu = create_ssr_component(($$result, $$props, $$bindings, slots
     }
   })} <button class="text-2xl rounded-lg bg-blue-500 text-white aspect-square h-8">${`+`}</button></div> ${``}`;
 });
+const BASE_URL = "/jakkunight";
 const TopicLink = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { link = "" } = $$props;
   let { topic = "" } = $$props;
@@ -80,7 +81,7 @@ const TopicLink = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     $$bindings.link(link);
   if ($$props.topic === void 0 && $$bindings.topic && topic !== void 0)
     $$bindings.topic(topic);
-  return `<div class="w-full text-white text-xl justify-evenly m-4"><a${add_attribute("href", link, 0)}><h3>${!topic ? `${slots.default ? slots.default({}) : ``}` : `${escape(topic)}`}</h3></a></div>`;
+  return `<div class="w-full text-white text-xl justify-evenly m-4"><a${add_attribute("href", BASE_URL + link, 0)}><h3>${!topic ? `${slots.default ? slots.default({}) : ``}` : `${escape(topic)}`}</h3></a></div>`;
 });
 const ContentModal = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { heading = "" } = $$props;

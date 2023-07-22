@@ -1,4 +1,4 @@
-import { b as base, a as assets, r as reset, p as public_env, o as options, s as set_private_env, c as set_public_env, g as get_hooks } from "./chunks/internal.js";
+import { b as base, a as assets, o as override, r as reset, p as public_env, c as options, s as set_private_env, d as set_public_env, g as get_hooks } from "./chunks/internal.js";
 import { n as noop, s as safe_not_equal } from "./chunks/ssr.js";
 const DEV = false;
 const SVELTE_KIT_ASSETS = "/_svelte_kit_assets";
@@ -1816,6 +1816,7 @@ async function render_response({
       data: data2,
       form: form_value
     };
+    override({ base: base$1, assets: assets$1 });
     {
       try {
         rendered = options2.root.render(props);

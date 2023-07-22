@@ -26,7 +26,6 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const BASE_PATH: string;
 	export const LESS_TERMCAP_se: string;
 	export const POWERSHELL_TELEMETRY_OPTOUT: string;
 	export const LANGUAGE: string;
@@ -146,7 +145,7 @@ declare module '$env/static/private' {
  * ```
  */
 declare module '$env/static/public' {
-	
+	export const PUBLIC_BASE_PATH: string;
 }
 
 /**
@@ -163,7 +162,6 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		BASE_PATH: string;
 		LESS_TERMCAP_se: string;
 		POWERSHELL_TELEMETRY_OPTOUT: string;
 		LANGUAGE: string;
@@ -288,6 +286,7 @@ declare module '$env/dynamic/private' {
  */
 declare module '$env/dynamic/public' {
 	export const env: {
+		PUBLIC_BASE_PATH: string;
 		[key: `PUBLIC_${string}`]: string | undefined;
 	}
 }

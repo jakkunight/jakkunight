@@ -2,6 +2,10 @@ import { c as create_ssr_component, a as setContext, v as validate_component, m 
 let base = "/jakkunight";
 let assets = base;
 const initial = { base, assets };
+function override(paths) {
+  base = paths.base;
+  assets = paths.assets;
+}
 function reset() {
   base = initial.base;
   assets = initial.assets;
@@ -92,7 +96,7 @@ const Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const options = {
   app_template_contains_nonce: false,
-  csp: { "mode": "auto", "directives": { "script-src": ["self"], "upgrade-insecure-requests": false, "block-all-mixed-content": false }, "reportOnly": { "script-src": ["report-uri"], "upgrade-insecure-requests": false, "block-all-mixed-content": false } },
+  csp: { "mode": "auto", "directives": { "upgrade-insecure-requests": false, "block-all-mixed-content": false }, "reportOnly": { "upgrade-insecure-requests": false, "block-all-mixed-content": false } },
   csrf_check_origin: true,
   track_server_fetches: false,
   embedded: false,
@@ -166,7 +170,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1mi078b"
+  version_hash: "plgk8o"
 };
 function get_hooks() {
   return {};
@@ -174,11 +178,12 @@ function get_hooks() {
 export {
   assets as a,
   base as b,
-  set_public_env as c,
-  set_assets as d,
-  set_building as e,
+  options as c,
+  set_public_env as d,
+  set_assets as e,
+  set_building as f,
   get_hooks as g,
-  options as o,
+  override as o,
   public_env as p,
   reset as r,
   set_private_env as s

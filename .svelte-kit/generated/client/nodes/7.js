@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/the-console-logs/maitei/+page.svelte";

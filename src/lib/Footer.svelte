@@ -6,7 +6,7 @@
     import youtube from "$lib/assets/youtube.svg";
     import twitch from "$lib/assets/twitch.svg";
 </script>
-<div class="flex flex-col flex-nowrap w-full h-max bg-blue-950 p-4 items-center justify-center text-center">
+<nav class="flex flex-col flex-nowrap w-full h-max bg-blue-950 p-4 items-center justify-center text-center">
     <Heading>
         ¡Seguime en mis redes!
     </Heading>
@@ -16,4 +16,4 @@
         <SocialLink link={"https://m.youtube.com/channel/UCj9oLC2AaoHRqZffjXhOTLA"} media={youtube} />
         <SocialLink link={"https://twitch.tv/jakku_night"} media={twitch} />
     </div>
-</div>
+</nav>

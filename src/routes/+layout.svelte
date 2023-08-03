@@ -1,12 +1,12 @@
-<script>
-    import Footer from "$lib/Footer.svelte";
+<script lang="ts">
     import "../app.css";
-    import Navbar from "../lib/Navbar.svelte";
+    import Header from "$lib/components/Header.svelte";
+    import Footer from "$lib/components/Footer.svelte";
 </script>
-<div class="bg-black text-gray-400 font-sans min-h-screen w-screen m-0 box-border p-4" >
-    <Navbar />
-    <div class="min-h-screen w-full neon-cyan-100 p-1 m-0" >
+<div class="max-w-screen h-screen m-0 p-4 bg-black flex flex-col gap-4 text-cyan-500 font-primary text-sm overflow-y-auto overscroll-none" >
+    <Header/>
+    <section class="w-full h-auto flex flex-col gap-4 border-double border-cyan-500 border-4 p-4 neon-cyan-100" >
         <slot/>
-    </div>
-    <!-- <Footer/> -->
+    </section>
+    <Footer/>
 </div>

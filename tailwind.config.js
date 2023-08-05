@@ -89,8 +89,20 @@ export default {
       fontFamily: {
         primary: "Fira Code"
       },
-      animation: {},
-      keyframes: {}
+      animation: {
+        opening: "opening 2s linear"
+      },
+      keyframes: {
+        opening: {
+          from: {
+            left: "50%",
+            
+          },
+          to: {
+
+          }
+        }
+      }
     },
   },
   plugins: [

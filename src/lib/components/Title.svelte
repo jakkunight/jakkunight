@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	export let href:string|undefined = "";
-	let delay = 30;
+	export let delay = 0;
 	let element:HTMLElement;
 	let container:HTMLElement;
 	let text = "";

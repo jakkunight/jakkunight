@@ -54,8 +54,8 @@ declare module '$env/static/private' {
 	export const LESS_TERMCAP_so: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
 	export const npm_package_scripts_check: string;
-	export const SYSTEMD_EXEC_PID: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
+	export const SYSTEMD_EXEC_PID: string;
 	export const VISUAL: string;
 	export const npm_package_dependencies_dotenv: string;
 	export const COLORTERM: string;
@@ -76,6 +76,7 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_check_watch: string;
 	export const npm_package_devDependencies_autoprefixer: string;
 	export const XDG_SESSION_CLASS: string;
+	export const MEMORY_PRESSURE_WATCH: string;
 	export const USER_ZDOTDIR: string;
 	export const npm_config_registry: string;
 	export const TERM: string;
@@ -89,6 +90,7 @@ declare module '$env/static/private' {
 	export const XDG_RUNTIME_DIR: string;
 	export const XDG_SESSION_PATH: string;
 	export const GDK_BACKEND: string;
+	export const npm_config_frozen_lockfile: string;
 	export const DISPLAY: string;
 	export const nnn: string;
 	export const LANG: string;
@@ -127,6 +129,7 @@ declare module '$env/static/private' {
 	export const npm_command: string;
 	export const PNPM_SCRIPT_SRC_DIR: string;
 	export const npm_package_scripts_preview: string;
+	export const MEMORY_PRESSURE_WRITE: string;
 	export const PNPM_HOME: string;
 	export const EDITOR: string;
 	export const INIT_CWD: string;
@@ -188,8 +191,8 @@ declare module '$env/dynamic/private' {
 		LESS_TERMCAP_so: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
 		npm_package_scripts_check: string;
-		SYSTEMD_EXEC_PID: string;
 		DBUS_SESSION_BUS_ADDRESS: string;
+		SYSTEMD_EXEC_PID: string;
 		VISUAL: string;
 		npm_package_dependencies_dotenv: string;
 		COLORTERM: string;
@@ -210,6 +213,7 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_check_watch: string;
 		npm_package_devDependencies_autoprefixer: string;
 		XDG_SESSION_CLASS: string;
+		MEMORY_PRESSURE_WATCH: string;
 		USER_ZDOTDIR: string;
 		npm_config_registry: string;
 		TERM: string;
@@ -223,6 +227,7 @@ declare module '$env/dynamic/private' {
 		XDG_RUNTIME_DIR: string;
 		XDG_SESSION_PATH: string;
 		GDK_BACKEND: string;
+		npm_config_frozen_lockfile: string;
 		DISPLAY: string;
 		nnn: string;
 		LANG: string;
@@ -261,6 +266,7 @@ declare module '$env/dynamic/private' {
 		npm_command: string;
 		PNPM_SCRIPT_SRC_DIR: string;
 		npm_package_scripts_preview: string;
+		MEMORY_PRESSURE_WRITE: string;
 		PNPM_HOME: string;
 		EDITOR: string;
 		INIT_CWD: string;

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	export let href:string|undefined = "";
-	export let delay = 10;
+	export let delay = 0;
 	let element:HTMLElement;
 	let container:HTMLElement;
 	let text = "";
@@ -18,7 +18,7 @@
 			clearInterval(pid);
 		}
 		container.style.left = `${50 - i / 2}%`;
-		element.style.width = `${i}%`;
+		element.style.width = `${i + 1}%`;
 		if(
 			i > 0 &&
 			charMap(Math.trunc(50 - (i / 2)), text.length) !== charMap(Math.trunc(50 - (i + 1) / 2), text.length) &&
@@ -54,7 +54,7 @@
 		<span>
 			{decorators.begin}
 		</span>
-		<span bind:this={element} class="text-clip overflow-clips w-0">
+		<span bind:this={element} class="text-clip overflow-hidden w-0">
 			<slot/>
 		</span>
 		<span>

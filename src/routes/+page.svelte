@@ -1,50 +1,137 @@
-<script lang="ts" >
-    import Image from "$lib/components/Image.svelte";
-import Title from "$lib/components/Title.svelte";
-    import Typewriter from "$lib/components/Typewriter.svelte";
+<script>
 </script>
-<Title>¡Maiteĩ!</Title>
-<Title>¿Jakku Night?</Title>
-<Typewriter>
-    ¡Hola a todos! Me llamo Jakku (ジャック) y soy programador full-stack.
-</Typewriter>
-<Title>¿Qué cosas te gustan hacer?</Title>
-<Typewriter>
-    Me gustan mucho ver anime, leer manga y jugar videojuegos.
-</Typewriter>
-<Image src="https://i.pinimg.com/1200x/c8/c0/6b/c8c06bbfd14efd1533d118ef4adc3f7a.jpg" />
-<Title>¿De dónde sos?</Title>
-<Typewriter>
-    De un país que no existe.
-</Typewriter>
-<Image src="https://cdn.memegenerator.es/imagenes/memes/full/31/67/31672713.jpg" />
-<Title>¿Comida favorita?</Title>
-<Typewriter>
-    El soyo y el mbejú.
-</Typewriter>
-<Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL6Y_MJMABvwKjgpaS29JkBWmzM9nZcTT6Jg&usqp=CAU" />
-<Title>¿Bebida preferida?</Title>
-<Typewriter>
-    El tereré, el cocido, y mate (sobre todo si es dulce).
-</Typewriter>
-<Title>¿Juego favorito?</Title>
-<Typewriter>
-    El Age of Mythology y el Genshin Impact.
-</Typewriter>
-<Image src="https://cdn1.epicgames.com/offer/879b0d8776ab46a59a129983ba78f0ce/genshintall_1200x1600-4a5697be3925e8cb1f59725a9830cafc" />
-<Image src="https://i.blogs.es/0a9d42/ageof1/1366_2000.jpg" />
-<Title>¿Anime favorito?</Title>
-<Typewriter>
-    No Game No Life (Sigo esperando la 2da temporada).
-</Typewriter>
-<Image src="https://otakukart.com/wp-content/uploads/2020/12/Sora-Nai-1.jpg" />
-<Title href="area-programacion" >¿A qué área de la programación te dedicás?</Title>
-<Typewriter>
-    Aunque al inicio me especialicé en desarrollo de videojuegos, me dedico a la programación web full-stack con Express, React y MySQL.
-    También manejo un poco ReactNative/Expo, C++, Python y bash script, y ahora estoy aprendiendo SvelteKit.
-    Próximamente voy a estar estudiando un poco más de desarrollo en C/C++, MongoDB y Python Django.
-</Typewriter>
-<Image src="https://miro.medium.com/v2/resize:fit:1200/1*slHeZngyeUr7ypEz7MNL5w.png" />
-<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" />
-<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" />
-<Image src="https://miro.medium.com/v2/resize:fit:1200/1*slHeZngyeUr7ypEz7MNL5w.png" />
+<main class="bg-black text-gray-300 text-md p-4 flex-1 flex-col gap-4">
+	<h1 class="text-4xl text-white font-extrabold">
+		Jakku Night
+	</h1>
+	<section class="m-4 gap-4">
+		<h2 class="text-white text-2xl font-bold">
+			¿Quién soy?
+		</h2>
+		<p>
+			Solo soy otro programador más.
+		</p>
+	</section>
+	<section class="m-4 gap-4">
+		<h2 class="text-white text-2xl font-bold">
+			Preguntas Profesionales
+		</h2>
+		<h3 class="text-white text-xl font-semibold">
+			¿Qué tecnologías domino?
+		</h3>
+		<p>
+			Actualmente domino JavaScript/TypeScript como lenguaje de programación principal.
+			Utilizo React y Expo como frameworks de frontend en general. También uso Express 
+			y Elysia como frameworks de backend. También manejo MySQL/MariaDB 
+			como motores de base de datos. Cuento con un manejo básico de Git y GitHub.
+		</p>
+		<h3 class="text-white text-xl font-semibold">
+			¿Qué tecnologías estoy aprendiendo ahora?
+		</h3>
+		<p>
+			Estoy aprendiendo Python, para uso educativo. Estoy aprendiendo Svelte y SvelteKit como alternativas a 
+			React y Expo en el frontend y a Next como metaframework. También me estoy documentando acerca de 
+			SQLite para proyectos que requieran almacenamiento local y PostgreSQL como alternativa a MySQL. 
+			También estoy aprendiendo Bun, como alternativa a pnpm y Nodejs. En su día me interesé mucho por C++, 
+			para la creación de videojuegos.
+		</p>
+		<h3 class="text-white text-xl font-semibold">
+			¿Qué otras tecnologías conozco pero no domino?
+		</h3>
+		<p>
+			Conozco algo de Java y PHP 7. También me tocó trabajar con VisualBasic Script y Scratch con fines 
+			educativos.
+		</p>
+	</section>
+	<section class="m-4 gap-4">
+		<h2 class="text-white text-2xl font-bold">
+			Preguntas más personales
+		</h2>
+		<h3 class="text-white text-xl font-semibold">
+			¿A qué área del desarrollo me dedico?
+		</h3>
+		<p>
+			Actualmente me dedico más al desarrollo web, aunque en principio me quería dedicar al desarrollo de 
+			videojuegos. También me llegué a desempeñar como auxiliar docente para estudiantes de bachillerato 
+			técnico en informática en las áreas de desarrollo de videojuegos, robótica y algoritmia.
+		</p>
+		<h3 class="text-white text-xl font-semibold">
+			¿A qué otras áreas de la progrmación me gustaría dedicarme?
+		</h3>
+		<p>
+			De ser posible, al desarrollo de videojuegos, aunque también me interesa un montón el desarrollo 
+			de aplicaciones móviles, en particular con Android y Kotlin. También me interesa mucho el desarrollo 
+			de sistemas operativos, aunque no tengo mucha formación al respecto.
+		</p>
+		<h3 class="text-white text-xl font-semibold">
+			¿Qué otras habilidades útiles tengo, además de la programación?
+		</h3>
+		<p>
+			Por supuesto, manejo inglés intermedio, con orientación a la informática y la milicia.
+			Aunque no sea muy bueno, sé dibujar y hacer edición de video, audio e imagen básicos, aunque estoy 
+			trabajando en mejorar dichas habilidades. También sigo trabajando en la creación de contenido y 
+			la producción musical. También cuento con algo de maña para las ciencias exactas, como física y 
+			matemáticas. También, aunque en menor medida, me gustan las finanzas y la economía. Y por último, 
+			cuento con una buena base en ciencias sociales, como la filosofía, literatura, política y derecho.
+		</p>
+	</section>
+	<section class="m-4 gap-4">
+		<h2 class="text-white text-2xl font-bold">
+			Preguntas que no tienen nada que ver con el trabajo
+		</h2>
+		<h3 class="text-white text-xl font-semibold">
+			¿Qué tipo de contenido me gusta consumir?
+		</h3>
+		<p>
+			En general, me gustan mucho en anime, el manga y las novelas, pero también consumo bastante 
+			contenido acerca de videojuegos, en particular los RPGs estilo anime.
+		</p>
+		<h3 class="text-white text-xl font-semibold">
+			¿Qué me gusta tomar?
+		</h3>
+		<p>
+			Me gusta tomar tereré. También tomo mate, sobre todo si es dulce, y cocido, con leche.
+		</p>
+		<h3 class="text-white text-xl font-semibold">
+			¿Qué me gusta comer?
+		</h3>
+		<p>
+			Asado, sobre todo si es asado mbopí. También soy fanático de la chipa, el mbejú y la sopa paraguaya.
+			También me encanta la comida oriental, en especial la taiwanesa y la japonesa.
+		</p>
+		<h3 class="text-white text-xl font-semibold">
+			¿Olimpia o Cerrro?
+		</h3>
+		<p>
+			Libertad.
+		</p>
+		<h3 class="text-white text-xl font-semibold">
+			¿De dónde soy?
+		</h3>
+		<p>
+			De la capital de un país que no existe.
+		</p>
+		<h3 class="text-white text-xl font-semibold">
+			¿Quién es mi artista preferido?
+		</h3>
+		<p>
+			El utaite Mafumafu. Me parece el mejor músico de J-Pop de los últimos tiempos. También me gusta la dupla 
+			que forma junto a Soraru, "After the Rain".
+		</p>
+		<h3 class="text-white text-xl font-semibold">
+			¿De derecha o de izquierda?
+		</h3>
+		<p>
+			De derechas. Soy conservador en cuanto a lo social, Liberal y capitalista en lo económico y minarquista 
+			en lo político. No tengo preferencia alguna por una forma de gobierno en particular mientras que el 
+			Estado cumpla con su función y se organicen las prioridades de acuerdo a las divisiones territoriales 
+			de la nación.
+		</p>
+		<h3 class="text-white text-xl font-semibold">
+			¿Anime favorito?
+		</h3>
+		<p>
+			No Game No Life (sigo esperando la 2da temporada).
+		</p>
+	</section>
+</main>

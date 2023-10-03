@@ -6,3 +6,8 @@
 	font-family: 'Fira Code';
 	src: url('./fonts/FiraCode-VariableFont_wght.ttf') format("truetype");
 }
+body{
+	width: 100%;
+	min-height: 100%;
+	background: #000000;
+}

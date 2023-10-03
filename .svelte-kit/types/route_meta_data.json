@@ -1,24 +1,3 @@
 {
-	"/": [
-		"src/routes/+layout.ts",
-		"src/routes/+layout.ts"
-	],
-	"/algoritmia": [
-		"src/routes/+layout.ts"
-	],
-	"/boku-no-manga-academia": [
-		"src/routes/+layout.ts"
-	],
-	"/into-the-games": [
-		"src/routes/+layout.ts"
-	],
-	"/the-console-logs": [
-		"src/routes/+layout.ts"
-	],
-	"/the-console-logs/maitei": [
-		"src/routes/+layout.ts"
-	],
-	"/the-console-logs/nos-pasamos-a-svelte": [
-		"src/routes/+layout.ts"
-	]
+	"/": []
 }

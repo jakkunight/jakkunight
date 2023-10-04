@@ -1,12 +1,12 @@
 <script lang="ts">
 	import "../app.css";
-	import profile from "$lib/assets/jakku-tree.png";
+	import profile from "$lib/assets/jakku-new.png";
 
 </script>
 <header class="bg-black p-4 text-gray-300 sm:flex gap-4">
 	<div class="flex gap-4 items-center justify-center sm:justify-normal m-4" >
 		<div class="aspect-square h-16 rounded-full overflow-clip" >
-			<img src={profile} alt="profile" class="w-full h-auto relative bottom-[4px]" />
+			<img src={profile} alt="profile" class="aspect-square" />
 		</div>
 		<h3 class="text-white text-xl font-semibold">
 			Jakku Night
